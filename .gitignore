@@ -1,0 +1,4 @@
+# Project exclude paths
+/Api-gateway/target/
+/discovery_server/target/
+/user_service/target/
