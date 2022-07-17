@@ -5,7 +5,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import uz.company.dto.role.RoleCreateDto;
 import uz.company.dto.role.RoleUpdateDto;
-import uz.company.dto.user.UserLoginDto;
 import uz.company.entity.enums.RoleEnum;
 import uz.company.service.RoleService;
 import uz.company.util.BaseUtil;

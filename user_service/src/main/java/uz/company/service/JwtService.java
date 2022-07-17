@@ -8,7 +8,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import uz.company.dto.user.UserJwtDto;
-import uz.company.entity.User;
 import uz.company.exceptions.UniversalException;
 import uz.company.repository.UserRepository;
 import uz.company.util.ApiResponseObject;
@@ -64,5 +63,36 @@ private final UserRepository userRepository;
     public String getUsername(String token) {
         Claims body = Jwts.parser().setSigningKey(SecretKeys.secretWord).parseClaimsJws(token.substring(7)).getBody();
         return body.getSubject();
+    }
+
+    public String createJWTTokenWithAccessToken(String access_token) {
+          try {
+              String username = getUsername(access_token);
+              String byUserName= userRepository.findByUserName(username);
+            ApiResponseObject<UserJwtDto> currentUser =new ObjectMapper().readValue(byUserName, new TypeReference<ApiResponseObject<UserJwtDto>>() {});
+            if (!currentUser.getSuccess()){
+                throw new UniversalException(currentUser.getMessage(), HttpStatus.resolve(currentUser.getHttpStatus()));
+            }else {
+                String accessToken="";
+                Claims claims=Jwts.claims().setSubject(currentUser.getContent().getUser_name());
+
+                accessToken = Jwts.builder()
+                        .setClaims(claims)
+                        .setIssuedAt(new Date(System.currentTimeMillis()))
+                        .setExpiration(new Date(System.currentTimeMillis() + SecretKeys.accessTokenDate))
+                        .signWith(SignatureAlgorithm.HS512, SecretKeys.secretWord).compact();
+
+                claims.put("user",currentUser.getContent());
+                claims.put("access_token",accessToken);
+                return Jwts.builder()
+                        .setClaims(claims)
+                        .setIssuedAt(new Date(System.currentTimeMillis()))
+                        .setExpiration(new Date(System.currentTimeMillis() + SecretKeys.accessTokenDate))
+                        .signWith(SignatureAlgorithm.HS512, SecretKeys.secretWord).compact();
+            }
+
+        } catch (Exception e) {
+            throw new UniversalException(e.getMessage(), HttpStatus.CONFLICT);
+        }
     }
 }

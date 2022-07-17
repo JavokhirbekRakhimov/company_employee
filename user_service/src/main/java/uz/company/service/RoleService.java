@@ -2,7 +2,10 @@ package uz.company.service;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
 import org.springframework.http.ResponseEntity;
+import org.springframework.jdbc.datasource.init.ResourceDatabasePopulator;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
@@ -16,6 +19,7 @@ import uz.company.util.ApiResponseList;
 import uz.company.util.ApiResponseObject;
 import uz.company.util.BaseUtil;
 
+import javax.sql.DataSource;
 import java.net.UnknownServiceException;
 
 @Service
@@ -77,4 +81,5 @@ public class RoleService {
             return ResponseEntity.status(500).body(e.getMessage());
         }
     }
+
 }

@@ -7,7 +7,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.filter.OncePerRequestFilter;
 import reactor.util.annotation.Nullable;
-import uz.company.config.AuthService;
+import uz.company.service.AuthService;
 import uz.company.service.JwtService;
 
 import javax.servlet.FilterChain;
