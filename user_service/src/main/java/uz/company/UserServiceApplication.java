@@ -2,14 +2,10 @@ package uz.company;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.core.io.ClassPathResource;
-
-import javax.swing.*;
 import java.util.Properties;
 import java.util.Scanner;
-
 @SpringBootApplication
 @EnableEurekaClient
 public class UserServiceApplication {
