@@ -28,7 +28,7 @@ private final JdbcTemplate template;
     }
 
     @Override
-    public String findAll() {
+    public String findAll(Short size,Short page) {
         return null;
     }
 

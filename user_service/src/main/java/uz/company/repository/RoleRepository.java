@@ -25,8 +25,8 @@ public class RoleRepository implements RepositoryImp<Short> {
         return null;
     }
     @Override
-    public String findAll() {
-        return template.queryForObject("select find_all_roles()",String.class);
+    public String findAll(Short size,Short page) {
+        return template.queryForObject("select find_all_roles(?,?)",String.class, size,page);
     }
     @Override
     public String findById(Short aShort) {

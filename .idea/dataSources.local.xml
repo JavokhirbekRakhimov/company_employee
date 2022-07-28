@@ -2,7 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-221.6008.13">
     <data-source name="postgres@localhost" uuid="5e23b28e-600c-4d7b-aece-436c7614657e">
-      <database-info product="PostgreSQL" version="14.3" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.4.0" dbms="POSTGRES" exact-version="14.3" exact-driver-version="42.4">
+      <database-info product="PostgreSQL" version="14.4" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.4.0" dbms="POSTGRES" exact-version="14.4" exact-driver-version="42.4">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
@@ -10,10 +10,11 @@
       <user-name>postgres</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="database">
-            <name qname="user-server" />
-            <name qname="postgres" />
-            <node kind="schema" qname="public" />
+          <node kind="database" qname="user-server">
+            <node kind="schema">
+              <name qname="public" />
+              <name qname="test" />
+            </node>
           </node>
         </introspection-scope>
       </schema-mapping>

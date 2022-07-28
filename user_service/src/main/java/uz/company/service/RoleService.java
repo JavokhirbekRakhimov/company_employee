@@ -18,6 +18,7 @@ import uz.company.repository.RoleRepository;
 import uz.company.util.ApiResponseList;
 import uz.company.util.ApiResponseObject;
 import uz.company.util.BaseUtil;
+import uz.company.util.SecretKeys;
 
 import javax.sql.DataSource;
 import java.net.UnknownServiceException;
@@ -26,9 +27,9 @@ import java.net.UnknownServiceException;
 @RequiredArgsConstructor
 public class RoleService {
     private final RoleRepository roleRepository;
-    public ResponseEntity<?> getAll() {
+    public ResponseEntity<?> getAll(Short size,Short page) {
         try {
-            String all = roleRepository.findAll();
+            String all = roleRepository.findAll(size,page);
             ApiResponseList<RoleDto> list =new ObjectMapper().readValue(all, new TypeReference<>() {
             });
 

@@ -8,6 +8,7 @@ import uz.company.dto.role.RoleUpdateDto;
 import uz.company.entity.enums.RoleEnum;
 import uz.company.service.RoleService;
 import uz.company.util.BaseUtil;
+import uz.company.util.SecretKeys;
 
 import javax.validation.Valid;
 import java.util.Set;
@@ -20,12 +21,12 @@ public class RoleController {
     private final RoleService roleService;
     private final BaseUtil baseUtil;
     @GetMapping
-  public ResponseEntity<?>getAll(){
-    return roleService.getAll();
+  public ResponseEntity<?>getAll(@Valid @RequestParam(value = "size",defaultValue = SecretKeys.SIZE) Short size,@Valid @RequestParam(value = "page",defaultValue = SecretKeys.PAGE) Short page){
+    return roleService.getAll(size,page);
   }
     @GetMapping(path = "/{id}/{companyId}")
   public ResponseEntity<?>getById(@Valid @PathVariable Short id,@Valid @PathVariable Integer companyId){
-        baseUtil.checkRole(companyId, Set.of(RoleEnum.SUPER_ADMIN));
+        baseUtil.checkRole(companyId, Set.of(RoleEnum.ADMIN));
     return roleService.getById(id);
   }
     @PostMapping

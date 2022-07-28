@@ -6,7 +6,7 @@ public interface RepositoryImp<Id> {
 
     String delete(Id id);
 
-    String findAll();
+    String findAll(Short size,Short page);
 
     String findById(Id id);
 

@@ -5,11 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aca58a7a-7562-4f14-bde0-639daae27009" name="Changes" comment="run sql">
+      <change afterPath="$PROJECT_DIR$/user_service/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/5e23b28e-600c-4d7b-aece-436c7614657e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5e23b28e-600c-4d7b-aece-436c7614657e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5e23b28e-600c-4d7b-aece-436c7614657e/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5e23b28e-600c-4d7b-aece-436c7614657e/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5e23b28e-600c-4d7b-aece-436c7614657e/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/5e23b28e-600c-4d7b-aece-436c7614657e/storage_v2/_src_/database/user-server.heNDoQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5e23b28e-600c-4d7b-aece-436c7614657e/storage_v2/_src_/database/user-server.heNDoQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5e23b28e-600c-4d7b-aece-436c7614657e/storage_v2/_src_/database/user-server.heNDoQ/schema/public.abK9xQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5e23b28e-600c-4d7b-aece-436c7614657e/storage_v2/_src_/database/user-server.heNDoQ/schema/public.abK9xQ.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/src/main/java/uz/company/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/src/main/java/uz/company/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/src/main/java/uz/company/config/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/src/main/java/uz/company/config/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/src/main/java/uz/company/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/src/main/java/uz/company/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/src/main/java/uz/company/entity/enums/RoleEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/src/main/java/uz/company/entity/enums/RoleEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/src/main/java/uz/company/imp/RepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/src/main/java/uz/company/imp/RepositoryImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/src/main/java/uz/company/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/src/main/java/uz/company/repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/src/main/java/uz/company/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/src/main/java/uz/company/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/src/main/java/uz/company/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/src/main/java/uz/company/service/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/src/main/java/uz/company/util/SecretKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/src/main/java/uz/company/util/SecretKeys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/src/main/resources/sqlFunction/RoleFunction.sql" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/src/main/resources/sqlFunction/RoleFunction.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,37 +59,38 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/IdeaProjects/new_d_doc_microservices&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;94504981227a60f58b07cf5645ef8262&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "D:/IdeaProjects/new_d_doc_microservices",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "spring.configuration.checksum": "94504981227a60f58b07cf5645ef8262"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/&quot;: [
-      &quot;PostgreSQL&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
+      "PostgreSQL"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -116,7 +133,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="DiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <module name="discovery_server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="uz.company.DiscoveryApplication" />
       <method v="2">
@@ -140,6 +157,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ApiGateWayApplication" />
+        <item itemvalue="Spring Boot.DiscoveryApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +178,13 @@
       <workItem from="1658068586723" duration="7690000" />
       <workItem from="1658383968972" duration="790000" />
       <workItem from="1658404479823" duration="740000" />
-      <workItem from="1658413948578" duration="2017000" />
+      <workItem from="1658413948578" duration="3372000" />
+      <workItem from="1658485635061" duration="708000" />
+      <workItem from="1658565378135" duration="3585000" />
+      <workItem from="1658836483064" duration="110000" />
+      <workItem from="1658904654561" duration="1379000" />
+      <workItem from="1659008031483" duration="4385000" />
+      <workItem from="1659017665028" duration="6675000" />
     </task>
     <task id="LOCAL-00001" summary="run sql">
       <created>1658074665831</created>
@@ -183,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658420144633</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="run sql">
+      <created>1658420869724</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658420869724</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,5 +234,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="run sql" />
     <option name="LAST_COMMIT_MESSAGE" value="run sql" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

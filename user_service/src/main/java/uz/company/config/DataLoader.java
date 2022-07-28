@@ -23,10 +23,9 @@ public class DataLoader implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         if (ddl!=null&&ddl.equals("create")){
-                Resource resource = new ClassPathResource("test.sql");
+                Resource resource = new ClassPathResource("schema.sql");
                 ResourceDatabasePopulator databasePopulator = new ResourceDatabasePopulator(resource);
                 databasePopulator.execute(dataSource);
-
         }
     }
 

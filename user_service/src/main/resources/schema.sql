@@ -1,3 +1,11 @@
+-- Recreate the schema
+DROP SCHEMA if exists public CASCADE;
+CREATE SCHEMA if not exists public;
+
+-- Restore default permissions
+GRANT ALL ON SCHEMA  public TO postgres;
+GRANT ALL ON SCHEMA public TO public;
+
   /* create users table */
   CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
@@ -34,6 +42,13 @@ create table  if not exists company( id serial primary key ,
                                                       constraint fk_company foreign key(company_id) references company(id) on delete cascade ,
                                                       constraint fk_role foreign key(role_id) references role(id) on delete cascade
                                                                       );
+
+/* default user*/
+insert into role(name, rank) values ('ADMIN',1);
+insert into company(name, email, phone) VALUES ('Google','javohirbekrakhimov@gmail.com','+998997834961');
+insert into users(fist_name, last_name, user_name, password, email, phone) values ('Javokhirbek','Rakhimov','Jokha',crypt('@Jokha',gen_salt('bf')),'javohirbekrakhimov@gmail.com','+998997834961');
+insert into user_organization_roles(user_id, company_id, role_id) values ((select id from users where user_name='Jokha'),(select id from company where email='javohirbekrakhimov@gmail.com'),(select id from role where name='ADMIN'));
+
 
 
 

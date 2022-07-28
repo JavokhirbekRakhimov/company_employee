@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/user_service/src/main/java/uz/company/repository/RoleRepository.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/user_service/src/main/resources/schema.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/user_service/src/main/resources/sqlFunction/RoleFunction.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/user_service/src/main/resources/sqlFunction/UserFunction.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/user_service/src/main/resources/test.sql" dialect="GenericSQL" />
+  </component>
+  <component name="SqlResolveMappings">
+    <file url="file://$PROJECT_DIR$/user_service" scope="{&quot;node&quot;:{  &quot;@negative&quot;:&quot;1&quot;,  &quot;group&quot;:{   &quot;@kind&quot;:&quot;root&quot;,   &quot;node&quot;:{    &quot;name&quot;:{     &quot;@qname&quot;:&quot;5e23b28e-600c-4d7b-aece-436c7614657e&quot;    },    &quot;group&quot;:{     &quot;@kind&quot;:&quot;database&quot;,     &quot;node&quot;:{      &quot;name&quot;:{       &quot;@qname&quot;:&quot;user-server&quot;      },      &quot;group&quot;:{       &quot;@kind&quot;:&quot;schema&quot;,       &quot;node&quot;:{        &quot;name&quot;:{         &quot;@qname&quot;:&quot;public&quot;        }       }      }     }    }   }  } }}" />
   </component>
 </project>
