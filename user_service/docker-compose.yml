@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  app:
+    image: 'user_service_last:latest'
+    ports:
+      - "8081:8081"
+    build:
+      context: .
+    container_name: user_service_run
+    depends_on:
+      - postgres
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://user_service_db:5432/postgres
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=3611675
+  postgres:
+    image: 'postgres:latest'
+    container_name: user_service_db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=3611675
